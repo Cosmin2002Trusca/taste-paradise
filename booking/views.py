@@ -143,3 +143,6 @@ def edit_booking(request, booking_id):
         form = BookingForm(instance=booking)
 
     return render(request, 'booking/edit_booking.html', {'form': form})
+
+def menu_view(request):
+    return render(request, 'booking/menu.html')

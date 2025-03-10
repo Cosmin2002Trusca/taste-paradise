@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import homepage, login_view, signup_view, logout_view, book_table, my_bookings, delete_booking, edit_booking
+from .views import homepage, login_view, signup_view, logout_view, book_table, my_bookings, delete_booking, edit_booking, menu_view
 
 
 urlpatterns = [
@@ -11,4 +11,5 @@ urlpatterns = [
     path('my-bookings/', my_bookings, name='my_bookings'),
     path('delete-booking/<int:booking_id>/', delete_booking, name='delete_booking'),
     path('edit-booking/<int:booking_id>/', edit_booking, name='edit_booking'),
+    path('menu/', menu_view, name='menu'),
 ]   
